@@ -1,4 +1,4 @@
-package Lections.Java01.Ex004;
+package Lections.Java01.zEx004;
 
 public class PointMethod {
     static double distance(int x1, int y1, int x2, int y2) {

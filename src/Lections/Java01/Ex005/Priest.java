@@ -1,5 +1,6 @@
 package Lections.Java01.Ex005;
 
+
 import java.util.Random;
 
 public class Priest {
@@ -29,22 +30,22 @@ public class Priest {
 
     public Priest() {
         this(String.format(HERO_PRIEST_D, ++Priest.number),
-                Priest.r.nextInt(100, 200),
-                Priest.r.nextInt(50, 150));
+        Priest.r.nextInt(100, 200),
+        Priest.r.nextInt(50, 150));
     }
 
     public int Attack() {
         int damage = Priest.r.nextInt(20, 30);
-        this.elixir -= (int) (damage * 0.8);
+        this.elixir -= (int)(damage * 0.8);
         if (elixir < 0) return 0;
         else return damage;
     }
 
     public String getInfo() {
-        return String.format("Name: %s Hp: %d Elixir: %d Type: %s",
+        return String.format("Name: %s  Hp: %d Elixir:  %d Type: %s",
                 this.name, this.hp, this.elixir, this.getClass().getSimpleName());
     }
-
+    
     public void healed(int Hp) {
         this.hp = Hp + this.hp > this.maxHp ? this.maxHp : Hp + this.hp;
     }
@@ -53,6 +54,6 @@ public class Priest {
         if (this.hp - damage > 0) {
             this.hp -= damage;
         }
-        // else {die();}
+        // else { die(); }
     }
 }

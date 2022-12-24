@@ -1,4 +1,4 @@
-package Lections.Java01.Ex004;
+package Lections.Java01.zEx004;
 
 public class Program1 {
 

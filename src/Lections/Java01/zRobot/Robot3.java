@@ -1,4 +1,4 @@
-package Lections.Java01.Robot;
+package Lections.Java01.zRobot;
 
 import java.util.ArrayList;
 
