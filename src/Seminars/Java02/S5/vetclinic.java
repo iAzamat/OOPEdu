@@ -1,6 +1,4 @@
-package Seminars.Java02.S2;
-
-import Seminars.Java02.S2.cat;
+package Seminars.Java02.S5;
 
 import java.util.HashSet;
 
@@ -28,5 +26,5 @@ public class vetclinic {
         // System.out.println(cat_2.hashCode());
         // System.out.println(cat_3.hashCode());
         System.out.println(cat_2.hashCode());
-}
+    }
 }
