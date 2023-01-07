@@ -9,35 +9,47 @@ public class Main {
         Human person5 = new Female("Мария", "Петрова", "Сергеевна", 1984, 8, 03);
         Human person6 = new Man("Aнтон", "Петров", "Петрович", 1985, 11, 7);
 
+        setMarry(person1, person2);
+
         Family ivanov = new Family();
         ivanov.addPerson(person1);
         ivanov.addPerson(person2);
         ivanov.addPerson(person3);
         ivanov.addPerson(person4);
 
-        setMarry(person1, person2);
+        person3.setFather(person1);
+        person3.setMother(person2);
+        person4.setFather(person1);
+        person4.setMother(person2);
 
-        person3.setFather(1);
-        person3.setMother(2);
-        person4.setMother(2);
-        person4.setFather(1);
-
+        // вывод
         System.out.println(person1);
         System.out.println(person2);
         System.out.println(person3);
         System.out.println(person4);
+        System.out.println();
 
+        System.out.println(ivanov.findSpouse(person1));
+        System.out.println(ivanov.findSpouse(person2));
+        System.out.println();
 
-        person6.setMarried(person5);
-        person5.setMarried(person6);
-        System.out.println(person5);
-        System.out.println(person6);
+        System.out.println(ivanov.findParents(person3));
+        System.out.println();
+        System.out.println(ivanov.findParents(person4));
+        System.out.println();
+
+        setMarry(person5, person6);
+
         Family petrov = new Family();
         petrov.addPerson(person5);
         petrov.addPerson(person6);
 
-        System.out.println(ivanov.findParents(person3));
-        System.out.println(person6.getSpouse());
+        // вывод
+        System.out.println(person5);
+        System.out.println(person6);
+        System.out.println();
+
+        System.out.println(petrov.findSpouse(person5));
         System.out.println(petrov.findSpouse(person6));
     }
 

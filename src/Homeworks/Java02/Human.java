@@ -115,8 +115,8 @@ public abstract class Human implements Child {
         spouse.setSpouse(this.id);
     }
 
-    public void setMother(int mother) {
-        this.mother = mother;
+    public void setMother(Human mother) {
+        this.mother = mother.id;
     }
 
     public int getFather() {
@@ -131,8 +131,8 @@ public abstract class Human implements Child {
         Human.count = count;
     }
 
-    public void setFather(int father) {
-        this.father = father;
+    public void setFather(Human father) {
+        this.father = father.id;
     }
 
     public int getId() {

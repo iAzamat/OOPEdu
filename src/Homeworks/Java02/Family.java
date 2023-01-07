@@ -28,7 +28,7 @@ public class Family {
     public String findParents(Human person) {
         Human mother = findPerson(person.getMother());
         Human father = findPerson(person.getFather());
-        return String.format("%s %s\nМать - %s\nОтец - %s", person.getName(), person.getSurname(), mother.toString(), father.toString());
+        return String.format("Ребенок: %s %s\nМать - %s\nОтец - %s", person.getName(), person.getSurname(), mother.toString(), father.toString());
     }
 
     public String findSpouse(Human person) {
