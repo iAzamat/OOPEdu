@@ -22,10 +22,6 @@ public class Female extends Human {
         return super.toString() + ", женщина";
     }
 
-//    public void setMarried(Human husband) {
-//        super.setMarried(husband);
-//    }
-
     public int getHusband() {
         return husband;
     }

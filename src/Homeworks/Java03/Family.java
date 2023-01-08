@@ -7,8 +7,8 @@ public class Family {
 
     @Override
     public String toString() {
-        return "Family{" +
-                "family=" + family +
+        return "Семья: {" +
+                 family +
                 '}';
     }
 

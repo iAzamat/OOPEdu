@@ -28,6 +28,7 @@ public class Main {
         System.out.println(person3);
         System.out.println(person4);
         System.out.println();
+        System.out.println(ivanov);
 
         System.out.println(ivanov.findSpouse(person1));
         System.out.println(ivanov.findSpouse(person2));
@@ -48,6 +49,7 @@ public class Main {
         System.out.println(person5);
         System.out.println(person6);
         System.out.println();
+        System.out.println(petrov);
 
         System.out.println(petrov.findSpouse(person5));
         System.out.println(petrov.findSpouse(person6));
